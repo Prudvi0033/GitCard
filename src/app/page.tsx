@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className='flex items-center justify-center h-screen bg-[#0d0d0d] relative'>
       <Box/>
-      <div className=' absolute z-20 left-[-10rem] -rotate-90'>
+      <div className=' absolute z-20 left-[-6.5rem] -rotate-90'>
         <Title/>
       </div>
       <div className=' absolute bottom-[9rem] right-[14rem]'>

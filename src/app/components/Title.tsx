@@ -7,7 +7,7 @@ const Title = () => {
     return (
         <div className='bg-neutral-900/90 border shadow-[0_0_8px_rgba(255,255,255,0.05)] border-neutral-900 py-2 px-3 rounded-b-2xl  backdrop-blur-2xl'>
             <div
-                className={`text-neutral-700 ${monte.className} font-extrabold border-x border-b px-2 text-[8rem] rounded-xl border-neutral-800/60 leading-none select-none`}
+                className={`text-neutral-700 ${monte.className} font-extrabold border-x border-b px-2 text-[5rem] rounded-xl border-neutral-800/60 leading-none select-none`}
                 style={{
                     opacity: 0.9,
                     textShadow: `
