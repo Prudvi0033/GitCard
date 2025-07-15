@@ -24,7 +24,7 @@ const Box = () => {
             <div className="relative z-10 w-[26rem] h-[18rem] bg-[#0e0e0e] border-2 border-dashed border-neutral-800 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]" />
 
             <svg
-                className="absolute top-1/2 -translate-y-1/2"
+                className="absolute top-[20rem] -translate-y-1/2"
                 width="100vw"
                 height="1"
             >

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Raleway } from 'next/font/google'
 import Box from './components/Box'
@@ -17,7 +18,7 @@ const page = () => {
       <div className='absolute top-[5.5rem] right-[12rem]'>
         <LogoBox/>
       </div>
-      <div className={`absolute bottom-[1] font-semibold right-12 ${re.className}`}>
+      <div className={`absolute bottom-[1] font-semibold right-3 ${re.className}`}>
         <Tabs/>
       </div>
     </div>
