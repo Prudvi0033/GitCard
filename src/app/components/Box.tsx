@@ -1,5 +1,7 @@
+import { Montserrat } from 'next/font/google'
 import React from 'react'
-import Title from './Title'
+
+const monte = Montserrat({subsets: ['latin']})
 
 const Box = () => {
     return (
@@ -21,7 +23,9 @@ const Box = () => {
             </svg>
 
             {/* Card */}
-            <div className="relative z-10 w-[26rem] h-[18rem] bg-[#0e0e0e] border-2 border-dashed border-neutral-800 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]" />
+            <div  className="relative flex items-center justify-center z-10 w-[26rem] h-[18rem] bg-[#0e0e0e] border-2 border-dashed border-neutral-800 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]">
+                <span className={`${monte.className} absolute text-4xl font-extrabold text-neutral-600/20`}>Gitcard.</span>
+            </div>
 
             <svg
                 className="absolute top-[20rem] -translate-y-1/2"

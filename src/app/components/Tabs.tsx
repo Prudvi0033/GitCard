@@ -4,10 +4,10 @@ import { AnimatePresence, motion } from 'framer-motion'
 import {
     GoBook,
     GoRepo,
-    GoProject,
     GoPackage,
     GoStar,
 } from 'react-icons/go'
+import { GrTemplate } from "react-icons/gr";
 import EmptyBox from './EmptyBox'
 
 type Tab = {
@@ -19,14 +19,17 @@ type Tab = {
 const tabs: Tab[] = [
     { icon: <GoBook />, title: 'Overview' },
     { icon: <GoRepo />, title: 'Repositories' },
-    { icon: <GoProject />, title: 'Projects' },
+    {
+        icon: <GrTemplate />
+        , title: 'Projects'
+    },
     { icon: <GoPackage />, title: 'Packages' },
     { icon: <GoStar />, title: 'Stars' },
 ]
 
 const Tabs = () => {
     const [activeTab, setActiveTab] = useState<null | string>("Overview")
-    
+
     return (
         <div className='flex flex-col mx-auto'>
             {/* Tabs container */}
@@ -37,7 +40,7 @@ const Tabs = () => {
                         <div key={item.title}>
                             <button
                                 onClick={() => setActiveTab(item.title)}
-                                className='flex relative items-center justify-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-white/5'
+                                className='flex cursor-pointer relative items-center justify-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-white/5'
                             >
                                 <div className='flex gap-2 items-center'>
                                     <span className='text-[14px]'>{item.icon}</span>
@@ -48,7 +51,7 @@ const Tabs = () => {
                                         </span>
                                     )}
                                 </div>
-                                
+
                                 {activeTab === item.title && (
                                     <motion.div
                                         layoutId='underline'
@@ -67,7 +70,7 @@ const Tabs = () => {
                         </div>
                     ))}
                 </div>
-                
+
                 {/* Tab content */}
                 <div className='min-h-[300px]'>
                     <AnimatePresence mode="wait">
@@ -83,6 +86,8 @@ const Tabs = () => {
                             </motion.div>
                         )}
                     </AnimatePresence>
+
+                    <div className="absolute bottom-0 left-0 right-0 h-28 z-10 bg-gradient-to-t from-neutral-800 via-neutral-800/90 to-transparent [mask-image:linear-gradient(to_top,black_0%,black_60%,transparent_100%)] pointer-events-none" />
                 </div>
             </div>
         </div>
