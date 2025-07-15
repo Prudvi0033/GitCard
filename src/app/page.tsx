@@ -1,6 +1,7 @@
 import React from 'react'
 import Box from './components/Box'
 import Title from './components/Title'
+import LogoBox from './components/LogoBox'
 
 const page = () => {
   return (
@@ -9,8 +10,8 @@ const page = () => {
       <div className=' absolute z-20 left-[-10rem] -rotate-90'>
         <Title/>
       </div>
-      <div className=' absolute top-1/2 right-0 opacity-25'>
-        <img src="/githubGrad.svg" height={300} width={300} />
+      <div className=' absolute bottom-[9rem] right-[14rem]'>
+        <LogoBox/>
       </div>
     </div>
   )
