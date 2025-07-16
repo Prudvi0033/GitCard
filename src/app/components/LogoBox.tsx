@@ -44,7 +44,7 @@ const LogoBox = () => {
           className='absolute w-16 h-16 rounded-full border border-neutral-500/60'
         />
 
-        <img src="/gitLogo.svg" height={50} width={50} className='z-20' alt="Git Logo" />
+        <img src="/gitLogo.svg" height={50} width={50} className='z-20 pointer-events-none' alt="Git Logo" />
       </div>
     </div>
   )

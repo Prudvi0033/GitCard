@@ -87,7 +87,7 @@ const Tabs = () => {
                         )}
                     </AnimatePresence>
 
-                    <div className="absolute bottom-0 left-0 right-0 h-28 z-10 bg-gradient-to-t from-neutral-800 via-neutral-800/90 to-transparent [mask-image:linear-gradient(to_top,black_0%,black_60%,transparent_100%)] pointer-events-none" />
+                    <div className="absolute bottom-0 left-0 right-0 h-24 z-10 bg-gradient-to-t from-neutral-800 via-neutral-800/90 to-transparent [mask-image:linear-gradient(to_top,black_0%,black_60%,transparent_100%)] pointer-events-none" />
                 </div>
             </div>
         </div>

@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
-import { Raleway, Montserrat } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 import Box from './components/Box'
 import Title from './components/Title'
 import LogoBox from './components/LogoBox'
 import Tabs from './components/Tabs'
+import Pulse from './components/Pulse'
 
 const re = Raleway({subsets: ['latin']})
 
@@ -21,6 +22,9 @@ const page = () => {
       </div>
       <div className={`absolute bottom-[1] font-semibold right-3 ${re.className}`}>
         <Tabs/>
+      </div>
+      <div>
+        <Pulse/>
       </div>
     </div>
   )
