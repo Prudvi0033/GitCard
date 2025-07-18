@@ -5,7 +5,6 @@ import Box from "./components/Box";
 import Title from "./components/Title";
 import LogoBox from "./components/LogoBox";
 import Tabs from "./components/Tabs";
-import Pulse from "./components/Pulse";
 import Beams from "./components/Beams";
 
 const re = Raleway({ subsets: ["latin"] });
@@ -27,9 +26,6 @@ const page = () => {
         className={`absolute bottom-[1] font-semibold right-3 ${re.className}`}
       >
         <Tabs />
-      </div>
-      <div>
-        <Pulse />
       </div>
     </div>
   );
