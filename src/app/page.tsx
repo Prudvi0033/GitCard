@@ -6,6 +6,7 @@ import Title from "./components/Title";
 import LogoBox from "./components/LogoBox";
 import Tabs from "./components/Tabs";
 import Beams from "./components/Beams";
+import OuterBeam from "./components/OuterBeam";
 
 const re = Raleway({ subsets: ["latin"] });
 
@@ -19,8 +20,11 @@ const page = () => {
       <div className="absolute top-[5.5rem] right-[12rem] flex flex-row items-center gap-4">
         <LogoBox />
       </div>
-      <div className=" absolute -left-12">
-        <Beams/>
+      <div className="absolute -left-12">
+        <Beams />
+      </div>
+      <div className="">
+        <OuterBeam/>
       </div>
       <div
         className={`absolute bottom-[1] font-semibold right-3 ${re.className}`}
