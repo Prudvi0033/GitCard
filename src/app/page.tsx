@@ -7,6 +7,7 @@ import LogoBox from "./components/LogoBox";
 import Tabs from "./components/Tabs";
 import Beams from "./components/Beams";
 import OuterBeam from "./components/OuterBeam";
+import InputBox from "./components/InputBox";
 
 const re = Raleway({ subsets: ["latin"] });
 
@@ -16,6 +17,9 @@ const page = () => {
       <Box />
       <div className=" absolute z-20 left-[-6.5rem] -rotate-90">
         <Title />
+      </div>
+      <div>
+        <InputBox/>
       </div>
       <div className="absolute top-[5.5rem] right-[12rem] flex flex-row items-center gap-4">
         <LogoBox />
