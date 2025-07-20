@@ -2,16 +2,21 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { FaArrowRight } from "react-icons/fa6";
 import { Montserrat } from "next/font/google";
+import { useUsername } from "../contexts/UsernameContext";
 
 const Dancing = Montserrat({subsets : ['latin']})
 
 const InputBox = () => {
   const [value, setValue] = useState("");
+  const {setUsername} = useUsername();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log("Change event fired:", e.target.value);
     setValue(e.target.value);
   };
+
+  const handleClick = () => {
+    setUsername(value)
+  }
 
   return (
     <div className="absolute top-20 left-[12rem]">
@@ -22,7 +27,7 @@ const InputBox = () => {
             placeholder="Username"
             value={value}
             onChange={handleChange}
-            className={`w-full px-6 py-4 rounded-3xl border border-black/50 bg-[#212121] text-white
+            className={`w-full px-6 py-4 rounded-3xl border border-black/50 bg-[#212121] text-neutral-300
             shadow-[inset_2px_2px_4px_#1a1a1a,_inset_-2px_-2px_4px_#2a2a2a]
             focus:outline-none placeholder:text-neutral-600 placeholder:font-medium relative z-10 ${Dancing.className}`}
           />
@@ -38,6 +43,7 @@ const InputBox = () => {
             type: 'spring'
 
           }}
+          onClick={handleClick}
         className="absolute m-1 right-0 z-10 cursor-pointer">
           <button className="rounded-full shadow-[inset_2px_2px_4px_#1a1a1a,_inset_-2px_-2px_4px_#2a2a2a] p-6" />
           <span className="text-neutral-700/90 absolute left-4 top-4">

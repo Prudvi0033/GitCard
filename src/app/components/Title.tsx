@@ -3,7 +3,6 @@ import React from "react";
 import { Raleway } from "next/font/google";
 
 const monte = Raleway({ subsets: ["latin"] });
-
 const Title = () => {
   return (
     <div className="relative">
@@ -22,7 +21,7 @@ const Title = () => {
             WebkitBackdropFilter: "blur(6px)",
           }}
         >
-          Github
+          Github 
         </div>
       </div>
     </div>
