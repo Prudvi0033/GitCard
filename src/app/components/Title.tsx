@@ -7,7 +7,7 @@ const monte = Raleway({ subsets: ["latin"] });
 const Title = () => {
   return (
     <div className="relative">
-      <div className="bg-neutral-900/90 relative border shadow-[0_0_8px_rgba(255,255,255,0.05)] border-neutral-900 py-2 px-3 rounded-b-2xl  backdrop-blur-2xl">
+      <div className="bg-neutral-900/90 relative border shadow-[inset_2px_2px_4px_#1a1a1a,_inset_-2px_-2px_4px_#2a2a2a] border-neutral-900 py-2 px-3 rounded-b-2xl  backdrop-blur-2xl">
         <div
           className={`text-neutral-700 ${monte.className} font-extrabold border-x border-b px-2 text-[5rem] rounded-xl border-neutral-800/60 leading-none select-none`}
           style={{

@@ -28,7 +28,7 @@ const Tabs = () => {
   return (
     <div className="flex flex-col mx-auto">
       {/* Tabs container */}
-      <div className="bg-neutral-800/80 text-neutral-300 shadow-[0_0_8px_rgba(255,255,255,0.05)] rounded-lg border border-neutral-700/60">
+      <div className="bg-neutral-800/80 text-neutral-300 shadow-[inset_2px_2px_4px_#1a1a1a,_inset_-2px_-2px_4px_#2a2a2a] rounded-lg border border-neutral-700/60">
         {/* Tab buttons */}
         <div className="flex gap-2 p-2 border-b border-neutral-600">
           {tabs.map((item) => (
@@ -51,9 +51,8 @@ const Tabs = () => {
                   <>
                     <motion.div
                       layoutId="underline"
-                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-blue-800 to-transparent rounded-full"
+                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-blue-800 rounded-full"
                     />
-                    <span className=" absolute bottom-0 left-0 right-0 h-[3px] blur-sm bg-gradient-to-r from-transparent via-blue-800 to-transparent rounded-full"></span>
                   </>
                 )}
 

@@ -18,7 +18,7 @@ const rippleVariants = {
 const LogoBox = () => {
   return (
     <div>
-      <div className='relative flex items-center justify-center w-40 h-40 shadow-[0_0_8px_rgba(255,255,255,0.05)] bg-neutral-900/90 border border-neutral-800/70 rounded-xl overflow-hidden'>
+      <div className='relative flex items-center justify-center w-40 h-40 shadow-[inset_2px_2px_2px_#1a1a1a,_inset_-2px_2px_-2px_#2a2a2a] bg-neutral-900/90 border border-neutral-800/70 rounded-xl overflow-hidden'>
 
         <motion.div
           variants={rippleVariants}
