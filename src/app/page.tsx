@@ -8,6 +8,7 @@ import Tabs from "./components/Tabs";
 import Beams from "./components/Beams";
 import OuterBeam from "./components/OuterBeam";
 import InputBox from "./components/InputBox";
+import GitGraph from "./components/GitGraph";
 
 const re = Raleway({ subsets: ["latin"] });
 
@@ -21,9 +22,13 @@ const page = () => {
       <div>
         <InputBox/>
       </div>
+      <div className=" absolute left-[62rem] top-1 opacity-60 z-0">
+        <GitGraph/>
+      </div>
       <div className="absolute top-[5.5rem] right-[12rem] flex flex-row items-center gap-4">
         <LogoBox />
       </div>
+      
       <div className="absolute -left-12">
         <Beams />
       </div>
