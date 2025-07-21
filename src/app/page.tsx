@@ -22,7 +22,7 @@ const page = () => {
       <div>
         <InputBox/>
       </div>
-      <div className=" absolute left-[62rem] top-1 opacity-60 z-0">
+      <div className=" absolute left-[62rem] top-1 opacity-30 z-0">
         <GitGraph/>
       </div>
       <div className="absolute top-[5.5rem] right-[12rem] flex flex-row items-center gap-4">
